@@ -1,0 +1,158 @@
+.p{
+    color: rgb(81, 8, 108);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin : 5px 10px 5px 10px ; 上左下右 */
+    /* margin: 5px 10px; 上下 左右 */
+    /* margin :5px 10px 5px; 上 左右 下  */
+    /* margin 是外边距 padding 是内边距离  使用模式是一样的 */
+}
+.box1{
+    background-color: #25d9d9;
+    color:rgba(81, 8, 108, 0.2);
+
+    border: 5px blue solid;
+    border-left: 8px blue solid;
+    border-right: 5px red solid;
+    border-top: 10px green dotted;
+    border-bottom: 10px firebrick double;
+    border-bottom-width: 8px;
+    border-bottom-style: dashed;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    margin-top: 20px;
+
+}
+.box1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    word-spacing: 2em;
+}
+.box2{
+    border: 5px dotted #cccccc;
+    border-radius: 35px; /*圆角*/
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0px;
+    position: relative; /*相对定位原来的位置空白会保留； 绝对定位不会保留*/  
+    /*相对定位是相对原来的位置进行偏移；；绝对定位是针对页面来偏移 . 有上级的话就是针对上级，没上级就是根节点（整个页面）前提是父节点有 position: relative*/
+    top: 30px;
+    left: 100px;
+
+}
+.container{
+    width: 80%;
+    margin: auto; /*表示 居中*/
+}
+.font1 {
+    /* font-family:"IBM Plex Mono",monospace; */
+    font-family:Arial, Helvetica, sans-serif
+
+}
+.body{
+    background-color: rgba(10,10,10,0.3);
+    line-height: 1em;
+
+
+    font-family:"IBM Plex Mono",monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    /*可以简写 ：   font: bolder 30px "IBM Plex Mono",monospace*/
+}
+
+.list li{
+    background-color: red;
+    list-style-type: disc;
+    list-style: none;
+    list-style-image: url('./Photo/checkMark.jpg');
+}
+button {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 20px 35px;
+}
+button:hover{
+    background-color: red; /*放上去变红*/
+}
+button:active{
+    background-color: #fff; /*点击变白*/
+}
+a {
+    text-decoration: none;
+    color: #075232;
+}
+a:hover {
+    color: cyan; /*放上去变cyan*/
+}
+a:visited {
+    color: peru; /*访问过就变 peru 色*/
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.list2 li:nth-child(even){ /*odd*/
+    background-color: gray;
+    list-style:circle;
+
+}
+.list2 li:first-child {
+    background-color: blue;
+}
+.list2 li:last-child{
+    background-color: pink;
+}
+
+.position-box {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+    position: relative;
+}
+.position-box h1 {
+    position: absolute;
+    top: 500px;
+}
+.position-box h2 {
+    position: relative;
+    left: 500px;
+}
+
+#fixed {
+    position: fixed;
+    right: 0;
+    bottom: 200px;
+}
